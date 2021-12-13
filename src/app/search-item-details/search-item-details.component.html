@@ -1,0 +1,44 @@
+<div class="container my-4 border">
+  <div class="row bg-light border-bottom py-3">
+    <div class="col-sm-12">
+      <div class="card shadow">
+        <h2 style="background-color: yellow;">You Searched for:</h2>
+        <div class="card-body">
+          <div>
+            <div style="width: 40%; float: left">
+              <h2 style="background-color:rgb(105, 221, 76);">Dish Name : {{ food.strMeal }}</h2>
+              <!-- <h2>Ingredients :</h2>
+                    <ul>
+                      <li *ngFor="let i of ingredient">
+                        {{ i.name }}
+                        {{ i.measure }}
+                      </li>
+                    </ul> -->
+              <br />
+              <h2 style="background-color:rgb(105, 221, 76);">Cooking Instructions :</h2>
+              {{ food.strInstructions }}
+            </div>
+          </div>
+          <div style="width: 40%; float: right">
+            <img
+              [src]="food.strMealThumb"
+              class="img-fluid"
+              alt="Responsive image"
+            /><br />
+            <h2 style="background-color:rgb(105, 221, 76);">How to prepare the Dish :</h2>
+            <iframe
+              class="responsive-iframe"
+              src="https://www.youtube.com/embed/Woiiet4vQ58"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <!-- <iframe width="560" height="315" [src]=safeUrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <!-- <iframe width="560" height="315" [src]="randomPhotoImg.meals[0].strYoutube" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

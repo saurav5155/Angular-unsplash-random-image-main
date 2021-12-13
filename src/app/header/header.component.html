@@ -1,0 +1,40 @@
+<div class="outer">
+  <div class="body">
+    <div class="col-sm-12 d-flex align-items-center justify-content-between">
+      <div><h3 class="text-center mb-0"><b>The Meal DB</b></h3></div>
+      <!-- <button class="btn btn-sm btn-dark" (click)="getRandomDish()">
+        Get New Meal
+      </button> -->
+      <!-- <input type="text" [(ngModel)]="data" >
+      <button (click)="searchData()">Search</button> -->
+      <a routerLink="/"
+        ><button class="btn btn-success pull-right">Home</button></a
+      >
+      <div>
+        <span>
+        <input
+          type="text"
+          onfocus="this.value=''"
+          class="form-control rounded"
+          [(ngModel)]="data"
+          placeholder="Search . . ."
+          aria-label="Search"
+          aria-describedby="search-addon"
+        />
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          (click)="searchData()"
+        >
+          Search
+        </button>
+      </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="topnav">
+  <a class="active" routerLink="/">Home</a>
+  <input type="text" placeholder="Search..">
+  <button type="button" class="btn btn-outline-primary" (click)="searchData()">Search</button>
+</div> -->
